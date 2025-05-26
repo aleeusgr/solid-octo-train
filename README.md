@@ -33,10 +33,9 @@ To get started with this project, follow these steps:
 1. Clone the repository: `git@github.com:aleeusgr/solid-octo-train.git`
 2. Start the Cardano-node: `nix run .#cardano-node -- run    --topology ../preprod/topology.json    --database-path ../preprod/db    --socket-path ../preprod/db/node.socket    --host-addr 0.0.0.0    --port 3000    --config ../preprod/config-bp.json`
 3. Start the Radicle node: `rad node start`
-4. run main script
-5. send patch to the project `git push rad HEAD:refs/patches`
-6. ...
-7. see tADA transferred from wallet A to wallet B
+4. run main script: `$./main.sh`
+5. trigger the event in the log: `rad node status`
+6. the script produces the output of `cardano-node query tip` command.
 
 **Contributing**
 ---------------
